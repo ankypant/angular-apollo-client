@@ -1,0 +1,7 @@
+query getEmployees {
+  employee {
+    name
+    id
+    email
+  }
+}

@@ -1,0 +1,25 @@
+scalar DateTime
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  employee: [Employee]!
+}
+
+type Mutation {
+  employeeDetails(id: Int, name: String, email: String): Employee!
+}
+
+type Employee {
+  id: Int!
+  name: String!
+  email: String
+}
+
+# input EmployeeDetails {
+#   name: String!
+#   email: String
+# }
